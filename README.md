@@ -1,4 +1,4 @@
-# Multivariate-filter-methods-for-feature-selection-with-the-gamma-mteric
+# Multivariate-filter-methods-for-feature-selection-with-the-gamma-metric
 
 Repository with the R scripts used for the simulation study of the feature selection with the γ-metric. Each scenario can be run independently of any other scenario. If one wish to execute of the Scenario, first make sure that the scripts 'function.R', 'functionGammaMetric.R', and 'functionGeneration.R' 
 are installed in the same directory and set it as the working directory of your R environment. Second for Scenario 2 and Scenario 3, intermediate saves are executed inside the for loops. Make sure you that running the script won't erase previous results. 
