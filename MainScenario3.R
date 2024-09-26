@@ -35,7 +35,7 @@ non_zero_group <- c(1, 2, 3, 4, 5, 10)                                      # Gr
 value <- 1.5                                                                # Beta coefficients value (when different from 0)
 n_ind <- 1                                                                  # Number of independent group
 simulation <- 1:6                                                           # Cases for this scenario 
-R <- 2                                                                     # Number of repetitions
+R <- 50                                                                    # Number of repetitions
 set.seed(123)                                                               # Seed
 beta_vec <- produceBeta(s_g, n_g, non_zero_coeff, non_zero_group, value)    # Beta vector
 beta <- beta_vec[-1]
