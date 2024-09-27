@@ -64,7 +64,7 @@ approachFunctions <- list(
     doParallel::registerDoParallel(inner_cl)
     
     estim <- ifelse(min(table(data[, 1])) < ncol(data[, -1]), 'shrink', 'empiric')
-
+    parallel::clusterEvalQ(inner_cl, source('functionGammaMetric.R'))
     
     evaluator <- function(attributes, data, dependent = 'y'){
       gammaMetric(X = data[,attributes], class = data[, dependent], covEstim = estim, plot = FALSE)
